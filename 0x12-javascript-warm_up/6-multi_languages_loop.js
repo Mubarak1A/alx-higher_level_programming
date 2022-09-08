@@ -1,5 +1,9 @@
 #!/usr/bin/node
-const s = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-for (let i = 0; i < 3; i++) {
-  console.log(s[i]);
-}
+
+/**
+ * prints 3 lines: (like 1-multi_languages.js) but by using an array of string and a loop
+ */
+
+const sentences = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+
+sentences.forEach(element => console.log(element));
