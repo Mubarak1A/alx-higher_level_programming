@@ -1,15 +1,20 @@
 #!/usr/bin/node
 
 const request = require('request');
-const fs = require('fs');
 
 request(process.argv[2], function (error, response, body) {
   if (error) {
     console.error(error);
   }
-  try {
-    fs.writeFile(process.argv[3], body, 'utf8', function (err, result) { if (err) console.log(err); });
-  } catch (err) {
-    console.log(err);
-  }
+  /* const nb = JSON.parse(body).results.reduce((acc, elem) => {
+    acc += elem.characters.reduce((acc, character) => {
+      return (character === 'https://swapi.co/api/people/18/' ? acc + 1 : acc);
+    }, 0);
+    return (acc);
+  }, 0);
+  */
+  const nb = JSON.parse(body).results.filter((elem) => {
+    return elem.characters.filter((url) => { return url.includes('18'); }).length;
+  }).length;
+  console.log(nb);
 });
