@@ -1,7 +1,7 @@
 #!/usr/bin/python3
     """A square Module"""
 class Square:
-    "Class attribute with getters and setters"""
+    """Class attribute with getters and setters"""
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
