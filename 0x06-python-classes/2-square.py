@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+    """A square Module"""
 class Square:
+    """Creating class attribute with condition"""
     def __init__(self, size=0):
         if type(size) != int:
             raise TypeError('size must be an integer')
