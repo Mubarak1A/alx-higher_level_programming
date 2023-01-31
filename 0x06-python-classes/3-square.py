@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+    """A square Module"""
 class Square:
+    """Creating class attribute with condition"""
     def __init__(self, size=0):
         if type(size) != int:
             raise TypeError('size must be an integer')
@@ -8,6 +10,7 @@ class Square:
         else:
             self.__size = size
 
+    """Class Method"""
     def area(self):
         size = self.__size
         return size * size

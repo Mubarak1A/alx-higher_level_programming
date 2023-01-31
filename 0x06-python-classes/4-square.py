@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+    """A square Module"""
 class Square:
+    """Class attribute with getter and setter"""
     def __init__(self, size=0):
         self.__size = size
-
+    
     # Property
     @property
     def size(self):
@@ -18,5 +20,6 @@ class Square:
         else:
             self.__size = value
 
+    """Class Method"""
     def area(self):
         return self.__size ** 2
