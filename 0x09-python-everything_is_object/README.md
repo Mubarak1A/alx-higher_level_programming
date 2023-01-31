@@ -10,3 +10,11 @@
                     In the following code, do a and b point to the same object? Answer with Yes or No.
                         >>> a = 89
                         >>> b = 89
+4-answer.txt - answer to the question:
+                    In the following code, do a and b point to the same object? Answer with Yes or No.
+                        >>> a = 89
+                        >>> b = a
+5-answer.txt - answer to the question:
+                    In the following code, do a and b point to the same object? Answer with Yes or No.
+                        >>> a = 89
+                        >>> b = a + 1
