@@ -92,3 +92,4 @@
                         l2 = [4, 5, 6]
                         assign_value(l1, l2)
                         print(l1)
+19-copy_list.py - function def copy_list(l): that returns a copy of a list.
