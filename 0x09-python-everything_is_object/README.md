@@ -120,7 +120,7 @@
                     a = ()
                     b = ()
                     a is b
-26-answer.txt - answer to the question:
+27-answer.txt - answer to the question:
                     >>> id(a)
                     139926795932424
                     >>> a
@@ -128,4 +128,11 @@
                     >>> a = a + [5]
                     >>> id(a)
                 Will the last line of this script print 139926795932424? Answer with Yes or No.
-                
+27-answer.txt - answer to the question:
+                    >>> a
+                    [1, 2, 3]
+                    >>> id (a)
+                    139926795932424
+                    >>> a += [4]
+                    >>> id(a)
+                Will the last line of this script print 139926795932424? Answer with Yes or No.
