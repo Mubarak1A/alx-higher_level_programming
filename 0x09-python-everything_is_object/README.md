@@ -102,3 +102,6 @@
 22-answer.txt - answer to the question:
                     a = (1)
                 Is a a tuple? Answer with Yes or No.
+23-answer.txt - answer to the question:
+                    a = (1,)
+                Is a a tuple? Answer with Yes or No.
