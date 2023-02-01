@@ -110,8 +110,13 @@
                     a = (1)
                     b = (1)
                     a is b
-24-answer.txt - answer to the question:
+25-answer.txt - answer to the question:
                 What does this script print?
                     a = (1, 2)
                     b = (1, 2)
+                    a is b
+26-answer.txt - answer to the question:
+                What does this script print?
+                    a = ()
+                    b = ()
                     a is b
