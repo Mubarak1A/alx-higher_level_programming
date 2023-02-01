@@ -105,3 +105,8 @@
 23-answer.txt - answer to the question:
                     a = (1,)
                 Is a a tuple? Answer with Yes or No.
+24-answer.txt - answer to the question:
+                What does this script print?
+                    a = (1)
+                    b = (1)
+                    a is b
