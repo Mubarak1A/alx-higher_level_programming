@@ -93,3 +93,9 @@
                         assign_value(l1, l2)
                         print(l1)
 19-copy_list.py - function def copy_list(l): that returns a copy of a list.
+20-answer.txt - answer to the question:
+                    a = ()
+                Is a a tuple? Answer with Yes or No.
+21-answer.txt - answer to the question:
+                    a = (1, 2)
+                Is a a tuple? Answer with Yes or No.
