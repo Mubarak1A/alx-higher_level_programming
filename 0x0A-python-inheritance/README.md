@@ -1,8 +1,7 @@
 # 0x0A-python-inheritance
 
 # Learning Objectives
-    At the end of this project,expected to be able to explain to anyone, without the help of Google:
-
+At the end of this project,expected to be able to explain to anyone, without the help of Google:
 
     Why Python programming is awesome
     What is a superclass, baseclass or parentclass
