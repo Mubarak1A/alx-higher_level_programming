@@ -13,3 +13,4 @@ class Rectangle(BaseGeometry):
         """Class attributes"""
         self.width = width
         self.height = height
+        
