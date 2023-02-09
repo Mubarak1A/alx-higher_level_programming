@@ -4,6 +4,7 @@
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 General
+
     Why Python programming is awesome
     How to open a file
     How to write text in a file
