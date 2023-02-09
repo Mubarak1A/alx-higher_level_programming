@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """"Module for function write_file"""
 
+import os
+
 def write_file(filename="", text=""):
     """
         function that writes to a text file (UTF8) and returns the number of characters written:
@@ -21,5 +23,5 @@ def write_file(filename="", text=""):
             char += 1
     
     return char
-    
+
     
