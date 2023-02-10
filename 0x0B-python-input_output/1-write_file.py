@@ -12,11 +12,14 @@ def write_file(filename="", text=""):
         return:
             int (number of characters written)
     """
-    with open("filename", mode="w", encoding="UTF-8") as myFile:
+    with open("filename", mode="w", encoding="utf-8") as myFile:
         myFile.write(text)
+
+    with open("filename", encoding="utf-8") as myFile:
+        my_file = myFile.read()
     
     char = 0
-    for word in text:
+    for word in my_file:
         for char in word:
             char += 1
     
