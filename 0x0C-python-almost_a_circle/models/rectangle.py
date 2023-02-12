@@ -8,7 +8,6 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Class constructor"""
-
         super().__init__(id)
         if type(width) is not int:
             raise TypeError("width must be an integer")
@@ -90,3 +89,20 @@ class Rectangle(Base):
     def area(self):
         """return the area of rectangle"""
         return self.__width * self.__heigth
+
+    def display(self):
+        """prints in stdout the Rectangle instance with the character #"""
+        for i in range(self.__y):
+            print()
+        for i in range(self.__height):
+            for j in range(self.__x):
+                print('', end='')
+            for j in range(self.__width):
+                print("#", end='')
+            print()
+
+    def __str__(self):
+        """return class description"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.__id, self.__x,
+                                                       self.__y, self.__width,
+                                                       self.__height)
