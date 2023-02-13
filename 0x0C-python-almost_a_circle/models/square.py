@@ -27,3 +27,13 @@ class Square(Rectangle):
         """return class description"""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x,
                                                  self.y, self.width)
+
+    def update(self, *args, **kwargs):
+        """public method that assigns an argument to each attribute"""
+        if args is not None and len(args) > 0:
+            keys = ["id", "size", "x", "y"]
+            for i in range(len(args)):
+                setattr(self, keys[i], args[i])
+        else:
+            for key, value in kwargs.items():
+                setatrr(self, key, value)
