@@ -30,3 +30,9 @@ class TestSquare(unittest.TestCase):
             r4.height
             r4.x
             r4.y
+
+        with self.assertRaises(ValueError):
+            r5.size
+            r5.height
+            r5.x
+            r5.y
