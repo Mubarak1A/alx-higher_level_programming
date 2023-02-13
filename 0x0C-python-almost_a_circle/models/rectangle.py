@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module for Rectanglr class"""
+"""Module for Rectangle class"""
 from base import Base
 
 
