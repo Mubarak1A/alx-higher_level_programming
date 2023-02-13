@@ -5,8 +5,8 @@ import unittest
 from models.rectangle import Rectangle
 
 
-class TestBase(unittest.TestCase):
-    """Test class for Base class"""
+class TestRectangle(unittest.TestCase):
+    """Test class for Rectangle class"""
 
     def setUp(self):
         """General test variable"""
