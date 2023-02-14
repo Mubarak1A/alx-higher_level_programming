@@ -9,19 +9,19 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """Class constructor"""
         super().__init__(id, x, y, width, height)
-        self.__width = size
-        self.__height = size
+        self.width = size
+        self.height = size
 
     @property
     def size(self):
         """getter for size"""
-        return self.__size
+        return self.width
 
     @size.setter
     def size(self, width):
         """setter function for size"""
-        self.__width = size
-        self.__height = size
+        self.width = size
+        self.height = size
 
     def __str__(self):
         """return class description"""
@@ -40,5 +40,5 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """returns the dictionary representation of a Square"""
-        return {"id": self.__id, "size": self.__size, "x": self.__x,
-                "y": self.__y}
+        return {"id": self.id, "size": self.size, "x": self.x,
+                "y": self.y}
