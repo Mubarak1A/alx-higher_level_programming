@@ -1,40 +1,42 @@
 #!/usr/bin/python3
-"""Module for Square class"""
+
+"""square.py
+This module contains a class 'square' that inherits from Base
+"""
+
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """"Square class inheriting from Rectangle"""
+    """Class of a square object"""
 
     def __init__(self, size, x=0, y=0, id=None):
-        """Class constructor"""
-        super().__init__(id, x, y, width, height)
+        super().__init__(size, size, x, y, id)
+
+    def __str__(self):
+        return f'[Square] ({self.id}) {self.x}/{self.y} - {self.width}'
 
     @property
     def size(self):
-        """getter for size"""
+        """Getter for size"""
         return self.width
 
     @size.setter
-    def size(self, width):
-        """setter function for size"""
+    def size(self, size):
+        """Setter for size"""
         self.width = size
         self.height = size
 
-    def __str__(self):
-        """return class description"""
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x,
-                                                 self.y, self.width)
-
     def update(self, *args, **kwargs):
-        """public method that assigns an argument to each attribute"""
+        """Update Square attributes"""
         if args is not None and len(args) > 0:
-            keys = ["id", "size", "x", "y"]
+            keylist = ["id", "size", "x", "y"]
             for i in range(len(args)):
-                setattr(self, keys[i], args[i])
-        else:
+                if i < 4:
+                    setattr(self, keylist[i], args[i])
+        elif kwargs is not None:
             for key, value in kwargs.items():
-                setatrr(self, key, value)
+                setattr(self, key, value)
 
     def to_dictionary(self):
         """returns the dictionary representation of a Square"""
