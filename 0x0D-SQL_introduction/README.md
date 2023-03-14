@@ -55,6 +55,7 @@ In the container, credentials are root/root
   - In the container, you should start MySQL before playing with it:
 
 like this:
+    
     $ service mysql start                                                   
      * Starting MySQL database server mysqld 
     $
