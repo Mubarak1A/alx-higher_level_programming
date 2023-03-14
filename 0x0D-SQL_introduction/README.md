@@ -53,9 +53,10 @@ In the container, credentials are root/root
   - Connect via SSH
   - OR connect via the Web terminal
   - In the container, you should start MySQL before playing with it:
+
 like this:
     $ service mysql start                                                   
-      Starting MySQL database server mysqld 
+     * Starting MySQL database server mysqld 
     $
     $ cat 0-list_databases.sql | mysql -uroot -p                               
     Database                                                                                   
