@@ -1,2 +1,7 @@
 # alx-higher_level_programming
-Starting to learn higher level programming with python will be cool
+
+Learning Language for High Level absraction
+
+# Python
+# SQL
+# JavaScript
