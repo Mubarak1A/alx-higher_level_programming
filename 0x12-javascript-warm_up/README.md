@@ -28,6 +28,6 @@ General
     How to manipulate dictionary
     How to import a file
 
-# Code Style
+# CODE_STYLE
     - js-semistandard-style
 [![js-semistandard-style](https://raw.githubusercontent.com/standard/semistandard/master/badge.svg)](https://github.com/standard/semistandard)
