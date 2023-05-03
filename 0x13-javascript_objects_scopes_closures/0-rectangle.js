@@ -5,7 +5,7 @@
  * defines a rectangle
  */
 
-class Rectangle{
+class Rectangle {
     //empty class Rectangle defines a rectangle
     pass
 }
